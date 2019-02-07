@@ -1,0 +1,42 @@
+ create table salarydetails
+    -> (
+    -> emp_id int,
+    -> foreign key(emp_id) references empDetails(emp_id),
+    -> salary_month varchar(355),
+    -> salary_year varchar(355),
+    -> salary_date date,
+    -> dept_id int,
+    -> foreign key(dept_id) references department(dept_id),
+    -> emp_basic int,
+    -> emp_hra int,
+    -> emp_ma int,
+    -> emp_total_salary int
+    -> );
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> insert into salarydetails values(1,25000,300000,2019/01/20,11,23000,2000,1000,25000);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into salarydetails values(2,24000,280000,2019/01/20,22,22000,2000,1000,24000);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into salarydetails values(3,23000,276000,2019/01/20,33,21000,2000,1000,23000);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into salarydetails values(4,22000,264000,2019/01/20,44,20000,2000,1000,22000);
+Query OK, 1 row affected (0.20 sec)
+
+mysql> insert into salarydetails values(5,21000,252000,2019/01/20,44,19000,2000,1000,21000);
+Query OK, 1 row affected (0.11 sec)
+
+mysql> select * from salarydetails;
++--------+--------------+-------------+-------------+---------+-----------+---------+--------+------------------+
+| emp_id | salary_month | salary_year | salary_date | dept_id | emp_basic | emp_hra | emp_ma | emp_total_salary |
++--------+--------------+-------------+-------------+---------+-----------+---------+--------+------------------+
+|      1 | 25000        | 300000      | 2000-01-01  |      11 |     23000 |    2000 |   1000 |            25000 |
+|      2 | 24000        | 280000      | 2000-01-01  |      22 |     22000 |    2000 |   1000 |            24000 |
+|      3 | 23000        | 276000      | 2000-01-01  |      33 |     21000 |    2000 |   1000 |            23000 |
+|      4 | 22000        | 264000      | 2000-01-01  |      44 |     20000 |    2000 |   1000 |            22000 |
+|      5 | 21000        | 252000      | 2000-01-01  |      44 |     19000 |    2000 |   1000 |            21000 |
++--------+--------------+-------------+-------------+---------+-----------+---------+--------+------------------+
+5 rows in set (0.00 sec)
