@@ -1,0 +1,14 @@
+insert into authentication values(1,'riya','niit1','employee');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into authentication values(2,'piya','niit2','employee');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into authentication values(3,'sima','niit3','employee');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into authentication values(4,'tina','niit4','employee');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into authentication values(5,'sheena','niit5','employee');
+Query OK, 1 row affected (0.03 sec)
