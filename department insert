@@ -1,0 +1,14 @@
+ insert into department values(11,'HR');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into department values(22,'FIN');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into department values(33,'SEC');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into department values(44,'TPT');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into department values(55,'R&D');
+Query OK, 1 row affected (0.01 sec)
