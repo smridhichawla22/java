@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class ArrayCopy
+{
+	public static void main(String [] args) 
+	{
+		int a[]=new int[5];
+		int b[]=new int[a.length];
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the elements in array A:");
+		for(int i=0;i<5;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i<5;i++)
+		{
+			b[i]=a[i];
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println("Displaying elemets in array B:");
+			System.out.println(b[i]);
+		}
+	}
+}
