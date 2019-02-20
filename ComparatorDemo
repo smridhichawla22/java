@@ -1,0 +1,64 @@
+import java.lang.*;
+import java.util.Comparator;
+class StudentComparator {
+	int rollno;
+	String name,address;
+	//constructor
+	public StudentComparator(int rollno, String name,String address) {
+		this.rollno = rollno;
+		this.name = name;
+		this.address = address;	
+	}
+	//used to print student details in main()
+	public String toString() 
+	{
+		return this.rollno+" "+this.name+" "+this.address;
+	}
+}
+class Sortbyroll implements Comparator<StudentComparator>{
+	//used for sorting in ascending order of roll number
+	public int compare(StudentComparator a, StudentComparator b) 
+	{
+		return a.rollno-b.rollno;
+	}
+}
+class Sortbyname implements Comparator<StudentComparator>{
+	//used for sorting in ascending order of roll name
+	public int compare(StudentComparator a, StudentComparator b) 
+	{
+		return a.name.compareTo(b.name);
+	}
+}
+	
+  import java.util.*;
+
+public class ComparatorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<StudentComparator> ar = new ArrayList<StudentComparator>();
+		ar.add(new StudentComparator(111, "bbb", "london"));
+		ar.add(new StudentComparator(131, "aaa", "nyc"));
+		ar.add(new StudentComparator(121, "ccc", "jaipur"));
+		
+		System.out.println("Unsorted!!!");
+		for(int i=0; i<ar.size();i++)
+		{
+			System.out.println(ar.get(i));
+		}
+		Collections.sort(ar, new Sortbyroll());
+		System.out.println("\nSorted by rollno");
+		for(int i=0; i<ar.size();i++) 
+		{
+			System.out.println(ar.get(i));
+		}
+		Collections.sort(ar, new Sortbyname());
+		System.out.println("\nSorted by name");
+		for(int i=0; i<ar.size();i++) 
+		{
+			System.out.println(ar.get(i));
+		}
+		
+	}
+
+}
