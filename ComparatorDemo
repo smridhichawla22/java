@@ -29,6 +29,14 @@ class Sortbyname implements Comparator<StudentComparator>{
 		return a.name.compareTo(b.name);
 	}
 }
+Collections.sort(ar, new Sortbyaddress());
+		System.out.println("\nSorted by address");
+		for(int i=0; i<ar.size();i++) 
+		{
+			System.out.println(ar.get(i));
+		}
+		
+	}
 	
   import java.util.*;
 
@@ -58,6 +66,13 @@ public class ComparatorDemo {
 		{
 			System.out.println(ar.get(i));
 		}
+		class Sortbyaddress implements Comparator<StudentComparator>{
+	//used for sorting in ascending order of address
+	public int compare(StudentComparator a, StudentComparator b) 
+	{
+		return a.address.compareTo(b.address);
+	}
+}
 		
 	}
 
