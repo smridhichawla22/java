@@ -1,0 +1,70 @@
+import java.util.Comparator;
+
+public class MyBook
+{
+	int id;
+	String name, author, publisher;
+	Double price;
+	public MyBook(int id, String name, String author, String publisher, Double price) 
+	{
+		this.id = id;
+		this.name = name;
+		this.author = author;
+		this.publisher = publisher;
+		this.price= price;
+	}
+}
+class SortbyPrice implements Comparator<MyBook>
+{
+
+	@Override
+	public int compare(MyBook a, MyBook b) {
+		// TODO Auto-generated method stub
+		return a.price .compareTo(b.price);
+	}
+	
+}
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class MyBookMain
+{	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Creating list of books
+		
+		List<MyBook> list = new ArrayList<MyBook>();
+		//creating books
+		MyBook b1 = new MyBook(101,"Let us C","Yashwant Kanetkar","BPB",800.0);
+		MyBook b2 = new MyBook(102,"Data Communications & Networking","Forouzan","Mc Graw Hill",400.0);
+		MyBook b3 = new MyBook(103,"Operating System","Galvin","Wiley",300.0);
+		MyBook b4 = new MyBook(104,"Oops","Gal","Wiley",400.0);
+		MyBook b5 = new MyBook(105,"Data Structures","Vin","House",200.0);
+		MyBook b6 = new MyBook(106,"Python","Harry","Paul",700.0);
+		MyBook b7 = new MyBook(107,"C++","Maven","Wills",600.0);
+		MyBook b8 = new MyBook(103,".Net","Austin","Rigs",800.0);
+		MyBook b9 = new MyBook(109,"C#","Marry","Wiley",900.0);
+		MyBook b10 = new MyBook(110,"R","P.L","Gills",200.0);
+		//Adding books to list
+		list.add(b1);
+		list.add(b2);
+		list.add(b3);
+		list.add(b4);
+		list.add(b5);
+		list.add(b6);
+		list.add(b7);
+		list.add(b8);
+		list.add(b9);
+		list.add(b10);
+		Collections.sort(list,new SortbyPrice());
+		//traversing list
+		for(MyBook b:list) 
+		{
+			System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.price);
+		}
+	}
+}
+
