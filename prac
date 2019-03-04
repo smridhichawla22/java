@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<style>
+#header{
+	background-color:green;
+	text-align:center;
+	padding:5px;
+	}
+#navlinks{
+	line-height:30px;
+	
+	width:150px;
+	float:center;
+	padding:5px;
+	}
+#section{
+	background-color:lightgreen;
+	width:600px;
+	text-align:center;
+	padding:25px;
+	}
+#footer{
+	background-color:green;
+	color:black;
+	clear:both;
+	text-align:center;
+	padding:25px;
+	}
+
+</style>
+
+
+
+
+
+
+<link rel="stylesheet" href="D:\java_programs\HTMLDemo\css\htmlPrac.css">
+<title>Prac</title>
+
+ 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body background-color=MediumSeaGreen>
+<div id="header">
+<h1>Oceanic Airlines</h1></div>
+
+
+
+
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">About us </a>
+  <a href="#" class="w3-bar-item w3-button">Contact us</a>
+  <a href="#" class="w3-bar-item w3-button">book flights</a>
+</div> 
+<div id="section text-center" >
+<img src="D:\java_programs\HTMLDemo\Images\beach-wallpaper-17.jpg" width="500" height="190" >
+<h2>Welcome!!</h2>
+<p>By default, browsers will treat all native form controls 
+ inside a as disabled, preventing both keyboard and mouse interactions on them. </p>
+ 
+ <p>By default, browsers will treat all native form controls 
+) inside a  as disabled, preventing both keyboard and mouse interactions on them. However, 
+if your form also includes elements, these will only be given a style of pointer-events: none. As noted in the section about disabled state for buttons (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Internet Explorer 10, and won’t prevent keyboard users from being able to focus or activate these links.
+ So to be safe, use custom JavaScript to disable such links.</p>
+ </div>
+<Div id ="footer">
+	Copyright newhorizon.com
+</Div>
+</body>
+</html>
