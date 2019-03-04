@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script language="JavaScript">
+document.write("<h1>java script statement<h1>");
+var a,b;
+b=(prompt("Enter name: ","NIIT"));
+a=parseInt(prompt("Enter age: ","NIIT"));
+
+if(a >= 18)
+	{
+	document.write("Can vote: "+b);
+	}
+else{
+	document.write("Cannot vote: "+b);
+	}
+
+</script>
+
+
+</body>
+</html>
