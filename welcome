@@ -1,0 +1,9 @@
+<h2>Welcome!!</h2>
+<p>By default, browsers will treat all native form controls 
+ inside a as disabled, preventing both keyboard and mouse interactions on them. </p>
+ 
+ <p>By default, browsers will treat all native form controls 
+) inside a  as disabled, preventing both keyboard and mouse interactions on them. However, 
+if your form also includes elements, these will only be given a style of pointer-events: none. As noted in the section about disabled state for buttons (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Internet Explorer 10, and won’t prevent keyboard users from being able to focus or activate these links.
+ So to be safe, use custom JavaScript to disable such links.</p>
+ </div>
