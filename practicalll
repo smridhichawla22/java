@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Prac</title>
+<style>
+#header{
+	
+	text-align:center;
+	padding:5px;
+	}
+#navlinks{
+	line-height:30px;
+	
+	width:150px;
+	float:center;
+	padding:5px;
+	}
+	
+#section{
+	width:600px;
+	text-align:center;
+	align:center;
+	border: 3px solid green;
+	padding:25px;
+	}
+#body{
+	background-image:"C:\Users\Chawla S\Desktop\images.jpg"
+	
+	}
+#footer{
+	background-color:green;
+	color:black;
+	clear:both;
+	text-align:center;
+	padding:25px;
+	}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: green;
+}
+
+</style>
+
+
+
+</head>
+<body > 
+
+
+<!--style="background-image:C:\Users\Chawla S\Desktop\images.jpg"-->
+
+<div class="rows">
+<div class="col-md-12">
+<div id="header">
+<img src="C:\Users\Chawla S\Desktop\logo.jpg" width="50" height="50"/>
+<h1>Oceanic Airlines</h1></div>
+</div></div>
+
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+
+
+<!--<div class="w3-bar w3-black" padding=50px>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">About us </a>
+  <a href="#" class="w3-bar-item w3-button">Contact us</a>
+  <a href="#" class="w3-bar-item w3-button">book flights</a>
+</div> -->
+<div class="rows">
+<div class="col-md-4 " id="section">
+<!--<div class="center">-->
+
+<br>
+
+<img src="C:\Users\Chawla S\Desktop\download.jpg" width="500" height="250" style="border-radius: 25px"/>
+<h2>Welcome!!</h2>
+<p>By default, browsers will treat all native form controls 
+ inside a as disabled, preventing both keyboard and mouse interactions on them. </p>
+ 
+ <p>By default, browsers will treat all native form controls 
+) inside a  as disabled, preventing both keyboard and mouse interactions on them. However, 
+if your form also includes elements, these will only be given a style of pointer-events: none. As noted in the section about disabled state for buttons (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Internet Explorer 10, and won’t prevent keyboard users from being able to focus or activate these links.
+ So to be safe, use custom JavaScript to disable such links.</p>
+ </div>
+ </div>
+ 
+<Div id ="footer">
+	Copyright newhorizon.com
+</Div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+ crossorigin="anonymous"></script>
+ 
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+	crossorigin="anonymous"></script>
+	
+	
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+	crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
