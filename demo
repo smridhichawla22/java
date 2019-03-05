@@ -1,0 +1,6 @@
+document.write("*********************************"+"<br>");
+MyStack = [[1234,"Book",123.45],[1,2,3]];
+for(j=0;j<MyStack.length;j++){
+	document.write(MyStack[j]);
+	document.write('<br/>');
+}
