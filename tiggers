@@ -1,0 +1,17 @@
+	create table employees_audit
+ 	id int auto_increment PRIMARY KEY,
+ 	employeenumber int not null,
+ 	lastname varchar(50) not null,
+ 	changedat datetime default null, 
+	action varchar(50) default null);
+	
+	create trigger before_employee_update
+	before update on employees
+	
+	for each row 
+	insert into employeea_audit set action='upadte'
+	employeenumber = odl.employeenumber,
+	lastname=old.lastname,
+	changedat= now();
+	
+	show triggers;
