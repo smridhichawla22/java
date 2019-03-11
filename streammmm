@@ -1,0 +1,12 @@
+import java.util.stream.Stream;
+
+public class StreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Stream<Integer> s = Stream.of(1,2,3,4,5,6);
+		s.forEach(p -> System.out.println(p));
+		
+	}
+
+}
